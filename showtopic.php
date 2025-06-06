@@ -73,9 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['reply'])) {
             }
         }
     }
-
+        // This feels like 4chan :O
     $replies[] = [
-        'author'    => 'anon',
+        'author'    => 'Anon',
         'timestamp' => date('Y-m-d H:i:s'),
         'content'   => $replyText,
         'image'     => $imagePath
