@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['reply'])) {
     $imagePath = '';
 
     
-// If you're on hosting a website by windows and can't upload gifs do not fucking host it because i tried testing it it would not fucking work.
+// If you're on hosting PortableBB on windows and can't upload gifs do not fucking host it because i tried testing it on a Windows environment and it just would not fucking work.
     if (!empty($_FILES['image']['name']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
         $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
         $fileType = mime_content_type($_FILES['image']['tmp_name']);
